@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+  <form method='POST', action='/new_package'>
+    <h1>Add Package</h1>
+    <div>{{ form.csrf_token }}</div>
+    <div>{{ form.sender.label }} {{ form.sender }}</div>
+    <div>{{ form.recipient.label }} {{ form.recipient }}</div>
+    <div>{{ form.origin.label }} {{ form.origin }}</div>
+    <div>{{ form.destination.label }} {{ form.destination }}</div>
+    <div>{{ form.express.label }} {{ form.express }}</div>
+    <div>{{ form.submit }}</div>
+  </form>
+
+</html>
